@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+}
+
+group 'by.epam.api'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation project(':core')
+}
+
+application{
+    mainClass = 'by.epam.api.App'
+}
